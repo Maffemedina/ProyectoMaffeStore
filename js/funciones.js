@@ -72,19 +72,19 @@ function agregarFilas()
 
 function calcularTotal(numeroFilas)
 {
-    var iva=0.12;
-    var i ;
+    var iva=0.19;
+    var i ;//contador
     var campoSubTotal=0;
     var elementoSubTotal=0;
     var valorIva = 0;
-    for(i=1;i<=numeroFilas;i++)
+    for(i=1;i<=numeroFilas;i++)//se recorre la tabla
     {
         campoSubTotal = "subtotal_"+i;
-        elementoSubTotal= elementoSubTotal+ parseFloat(document.getElementById(campoSubTotal).value);
+        elementoSubTotal= elementoSubTotal+ parseFloat(document.getElementById(campoSubTotal).value);//parsefloat covierte el numero a decimal
 
     }
-    document.getElementById('subTotal').value = elementoSubTotal.toFixed(2);
+    document.getElementById('subTotal').value = elementoSubTotal.toFixed(3);
     valorIva = elementoSubTotal * iva;
-    document.getElementById('iva').value = valorIva.toFixed(2);
+    document.getElementById('iva').value = valorIva.toFixed(3);
     document.getElementById('totalFactura').value = (elementoSubTotal+valorIva).toFixed(2);
 }

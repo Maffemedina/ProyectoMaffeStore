@@ -1,10 +1,15 @@
 <?php
-  $Servidor ="localhost";
-  $Base_Datos= "proyectoBD";
-  $usuario= "root";
-  $clave= "Qlarinetemaffe2";
+function conectar(){
+    $servername = "localhost";
+    $username = "root";
+    $password = "Qlarinetemaffe2";
 
+    $dbname = "proyectobd";
 
-  $conexion = new mysqli($Servidor,$usuario,$clave);
-  mysqli_select_db($conexion,$Base_Datos);
-//
+    $con=mysqli_connect($servername,$username,$password);
+
+    mysqli_select_db($con,$dbname);
+
+    return $con;
+}
+?>

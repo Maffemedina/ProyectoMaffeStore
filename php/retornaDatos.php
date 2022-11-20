@@ -1,6 +1,6 @@
 <?php
     $html = "";
-    include('Conexion.php');
+    include('Conexionfactura.php');
     $nombre = $_POST["nombre"];
    //$nombre ="SALTOS";
     $sql = "SELECT idCliente,concat(nombresCliente,' ',apellidosCliente) cliente FROM clientes where nombresCliente like '%".$nombre."%' union " .

@@ -1,6 +1,7 @@
 <?php
 
   include("../php/conexion.php");
+  include("../php/Conexionfactura.php");
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/funciones.js"></script>
+    <script src="../js/funciones.js" type="text/javascript"></script>
     <link rel="stylesheet" href="../css/bootstrap-4.6.0/dist/css/bootstrap.css">
 
     <style type="text/css">//tods es
@@ -74,8 +75,8 @@
                     <input type="text" name="codigoCliente" id="codigoCliente" class="form-control">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="">Nombre</label>
-                    <input type="text" name="nombreCliente" id="nombreCliente" class="form-control" onkeyup="buscaClienteNombre()">
+                    <label for="">Nombre:</label>
+                    <input type="text" name="nombresCliente" id="nombresCliente" class="form-control" onkeyup="buscaClienteNombre()">
                     <div id="sugerencias" class="list-group"></div>
                 </div>
                 <input type="hidden" name="numeroFilas" id="numeroFilas">  
@@ -94,7 +95,7 @@
                     <input type="text" name="iva" id="iva" class="form-control">
                 </div>
                 <div class="form-group col-md-2">
-                    <label for="">Total:</label>
+                    <label for="">Total a Pagar:</label>
                     <input type="text" name="totalFactura" id="totalFactura" class="form-control">
                 </div>
             </div>
@@ -109,7 +110,7 @@
                     <div id="filtrarProductos" class="list-group"></div>
                 </div>
                 <div class="form-group col-md-2">
-                    <label for="">PVP</label>
+                    <label for="">Precio de Venta (PVP)</label>
                     <input type="text" name="pvp" id="pvp" class="form-control">
                 </div>
                 <div class="form-group col-md-2">
@@ -135,13 +136,14 @@
 
             </table>
             <input type="submit" value="Grabar Factura" >
+            <a class="btn btn-success btn-lg btn-block" href="../index.html">Volver al Menú</a>
         </form>
     </div>
 </body>
 <script>
     function buscaClienteNombre()
     {
-        var criterio = document.getElementById("nombreCliente").value;
+        var criterio = document.getElementById("nombresCliente").value;
         var lista;
         
         if(criterio.length >3)
@@ -158,7 +160,7 @@
             xhr.onreadystatechange = confirmar;
             xhr.open('POST','../php/retornaDatos.php',false);
             xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-            xhr.send("nombre="+document.getElementById("nombreCliente").value);
+            xhr.send("nombre="+document.getElementById("nombresCliente").value);
             //xhr.send("nombre="+criterio);
             function confirmar()
             {
@@ -186,10 +188,10 @@
         }
     }
 
-    function retornaDatosCliente(idcliente,nombreCliente)
+    function retornaDatosCliente(idcliente,nombresCliente)
     {
         document.getElementById('codigoCliente').value = idcliente;
-        document.getElementById('nombreCliente').value = nombreCliente;
+        document.getElementById('nombresCliente').value = nombresCliente;
         document.getElementById('sugerencias').innerHTML = "";
     }
 

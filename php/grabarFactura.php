@@ -1,5 +1,5 @@
 <?php
-   include('conexion.php');
+   include('Conexionfactura.php');
    $idCliente          = $_POST["codigoCliente"];
    $subTotal           = $_POST['subTotal'];
    $iva                = $_POST['iva'];
@@ -9,8 +9,8 @@
    $campoCantidad      = '';
    $campoSubTotalLinea = '';
    $campoPvp           = '';   
-   $i = 0;
-   $strSQL="insert into factura_cabecera values(0,$idCliente,now(),$subTotal,$iva,$totalFactura)";
+   $i = 0;//contador
+   $strSQL="insert into factura_cabecera values(0,$idCliente,now(),$subTotal,$iva,$totalFactura)";//datos en la factura de la cabecer
    if($conexion->query($strSQL)==TRUE)
    {
         $idFactura= $conexion->insert_id;
