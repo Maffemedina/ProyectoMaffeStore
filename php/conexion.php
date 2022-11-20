@@ -1,6 +1,6 @@
 <?php
   $Servidor ="localhost";
-  $Base_Datos= "ProyectoBD";
+  $Base_Datos= "proyectoBD";
   $usuario= "root";
   $clave= "Qlarinetemaffe2";
 
