@@ -52,7 +52,7 @@ TABLA factura_detalle:
 **cantidad** INT
 **Preciounitario** DECIMAL (8,3)
 **Subtotal** DECIMAL (8,3))
-![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/upload/main)
+![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/CreacionBD.png)
 ### MODULO INICIO (MENU)
 En este modulo se elige las opciones de Registro , Facturacion y Salida, para hacer las respectivas sentencias.
 ![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/1paginaproyecto.png)
@@ -60,7 +60,16 @@ En este modulo se elige las opciones de Registro , Facturacion y Salida, para ha
 ### MODULO REGISTRO (CRUD)
 En este modulo entra la informacion del cliente para guardarla en la base de datos y se hace una CRUD donde Ingresa, edita,actualiza y elimina.
 ![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/SeccionRegistro.png)
+EN MYSQL
+![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/BDclientes.png)
 
 ### MODULO FACTURACIÓN 
 Este modulo se conforma por dos facturas ("factura_cabecera" y "factura_detalle") Donde se muestra los productos a comprar,  el resumen de compra y guardar la factura.
 ![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/SeccionFacturaci%C3%B3n.png)
+EN MYSQL
+![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/ejemplofacturacion.png)
+![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/BDproductos.png)
+![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/BDfactura%20cabecera.png)
+![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/BDFactura%20detalle.png)
+
+
