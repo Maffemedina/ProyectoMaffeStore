@@ -69,7 +69,9 @@ Este modulo se conforma por dos facturas ("factura_cabecera" y "factura_detalle"
 EN MYSQL
 ![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/ejemplofacturacion.png)
 ![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/BDproductos.png)
+### SECCION FACTURAS
+#### factura_cabecera
 ![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/BDfactura%20cabecera.png)
+#### factura_detalle
 ![](https://github.com/Maffemedina/ProyectoBasesdeDatosFACTURACION/blob/main/BDFactura%20detalle.png)
-
 
