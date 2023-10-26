@@ -1,5 +1,5 @@
-# PROYECTO FINAL BASES DE DATOS
-## Aplicacion web de sistema de inventario,registro Y facturación de un autoservicio y pequeñas tiendas
+# PROYECTO FINAL RUTA FORMATIVA MICROCRDENCIAL "SOFTWARE DEVELOPER" DE LA UNIVERSIDAD EAN
+## Prototipo aplicativo web de sistema de inventario,registro Y facturación de un autoservicio y pequeñas tiendas "MAFFSTORE"
 ### Introducción
 La nueva creacion de los supermercados en la actualidad tienen que estar acompañadas de la tecnologia ya que estos tendran un cambio radical, que se convertiria como efecto dominó en toda la cadena de suministro de la industria alimentaria. Las innovaciones técnicas, tanto online como en las tiendas físicas, así como los cambios en las demandas de los consumidores van a hacer reconfigurar los supermercados del futuro. Un futuro que cada vez está más cerca.
 
